@@ -1,0 +1,16 @@
+/*
+Abdullah Zameek, 20th February 2019
+
+CSS Style Sheet for Portfolio page
+
+*/
+
+h1, p , h2{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body{
+    background-color :#FAFAFA
+}
+
