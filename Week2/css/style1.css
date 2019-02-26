@@ -1,0 +1,43 @@
+/*
+Abdullah Zameek, 20th February 2019
+
+CSS Style Sheet for Portfolio page
+
+*/
+
+h1, p , h2{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body{
+    background-color:#A0C1D1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #232C33;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 146px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    color: #232C33;
+  }
+
