@@ -1,0 +1,10 @@
+.btn1, .btn2, .btn3{
+    background-color: black;
+    color:white;
+}
+
+.textHolder{
+    width:240px;
+    height:120px;
+}
+

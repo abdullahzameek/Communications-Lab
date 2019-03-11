@@ -1,0 +1,36 @@
+html, body{
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    font-family: 'Helvetica', sans-serif;
+}
+
+#left-section, #right-section{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#left-section:hover, #right-section:hover{
+    cursor: pointer;
+}
+
+#left-img, #right-img{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+#text-section{
+    position: absolute;
+    top: calc(50% - 32px);
+    width: 100%;
+    text-align: center;
+}
+
+#title-text{
+    background-color: black;
+    color: white;
+    font-size: 64px;
+}
