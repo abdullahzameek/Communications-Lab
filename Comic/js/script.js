@@ -1,15 +1,30 @@
-let dialogue = [];
-let txtFile = new XMLHttpRequest();
-txtFile.open("GET", "http://imanas.shanghai.nyu.edu/~arz268/communications-lab/Comic/dialogue.txt", true);
+let lines;
+let allText;
+let rawFile;
+let dialogue;
 
-txtFile.onreadystatechange = function() {
-  if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
-    if (txtFile.status === 200) {  // Makes sure it's found the file.
-      allText = txtFile.responseText; 
-      lines = txtFile.responseText.split("\n"); // Will separate each line into an array
-      dialogue = lines.slice();
+
+function readTextFile(file)
+{
+    rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                allText = rawFile.responseText;
+                lines = rawFile.responseText.split("\n"); // Will separate each line into an array
+            }
+        }
     }
-  }
+    rawFile.send(null);
 }
-txtFile.send(null);
-console.log(dialogue);
+
+readTextFile("http://imanas.shanghai.nyu.edu/~arz268/communications-lab/Comic/dialogue.txt");
+console.log("start time out...");
+setTimeout(20000);
+console.log(lines);
+
+
