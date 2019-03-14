@@ -44,6 +44,7 @@
 “I’ll come with you”
 “We can assume that C went to the laboratory”
 “Where will you go?”
+Make your choice. 
 “I’ll come with you to the infirmary”
 *nods in approval*
 *A. B, D walk down to the infirmary. It seems to be completely trashed. There’s a worn-out bed, a couple of surgical-looking equipment, a lot of old paper, and many colored vials*
@@ -160,8 +161,8 @@ The siren stops.
 “You’re an esper and you seem to be from the future. Like me.”
 *Everyone seems to be confused, but doesn’t say anything*
 “What do you mean...the future? Is this some sort of game?”
-“In the world where I come from, half of humanity has been wiped out by a deadly virus. Its the same one that A was infected with just now. It’s an artificial virus that was being developed around this time by a radical organisation called <insertgroupnamehere>. No one knows what their aims are, but it was at around this time that the virus entered the atmosphere. It starts with rapid breathing and heartbeat and it slowly drives the victim insane. They would often kill themselves in seek of salvation."
-"In the world I come from, people died by the dozens with every passing second. Pretty soon the bodies started to pile up. Some people would take a dive off a building or shoot themselves in the head. You know, the classics. "
+“In the world where I come from, half of humanity has been wiped out by a deadly virus. Its the same one that A was infected with just now. It’s an artificial virus that was developed around this time by a radical organisation called <insertgroupnamehere>. No one knows what their aims are, but it was at around this time that the virus entered the atmosphere. It starts with rapid breathing and it slowly drives its victim insane. They would often kill themselves in seek of salvation."
+"Pretty soon the bodies started to pile up. Some people would take a dive off a building or shoot themselves in the head. You know, the classics. "
 "But for some it was poison, or fire, or asphyxiation, or the noose... Plenty of people jumped in front of trains or cars. One pilot on a passenger airline drove his plane into the ground. Most forms of transportation ground to a halt pretty fast. That meant food couldn't get distributed, and thousands of people who weren't even infected died from starvation"
 "Everywhere you went there were just... piles of corpses, covered in flies and rats and crows. I don't know what Hell's like, but I imagine it's a lot like that. Only a few of us managed to stay secluded from the virus."
 "We were called the Resistance, and my father was the leader of the group. He was a pure genius and a pioneering quantum physicist who was working on a way to transport a person’s consciousness back in time to stop the calamity from ever happening."

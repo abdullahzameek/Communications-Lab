@@ -4,12 +4,74 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     </head>
     <body>
+    
+   
+    <audio id="player" autoplay loop>
+        <source src="assets/1.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="player2">
+            <source src="assets/2.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="player3">
+            <source src="assets/3.mp3" type="audio/mp3">
+    </audio>
+
+    
+    <audio id="player4">
+            <source src="assets/4.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="player5">
+            <source src="assets/5.mp3" type="audio/mp3">
+    </audio>
+    
+    <audio id="player6">
+            <source src="assets/6.mp3" type="audio/mp3">
+    </audio>
+    
+    <audio id="player7">
+            <source src="assets/7.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="player8">
+            <source src="assets/8.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="player9">
+            <source src="assets/9.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="player10">
+            <source src="assets/10.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="player11">
+            <source src="assets/11.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="player12">
+            <source src="assets/12.mp3" type="audio/mp3">
+    </audio>
+
+    
+    <audio id="player13">
+            <source src="assets/13.mp3" type="audio/mp3">
+    </audio>
+    
+
+
     <div id="BGimageHolder">
         <div id="charaImage"></div>
     </div>
     <div id="textRegion">
-    <p>In the world I come from, people died by the dozens with every passing second. Pretty soon the bodies started to pile up. Some people would take a dive off a building or shoot themselves in the head. You know, the classics. "</p>
+    <p id='actualText'></p>
     </div>
+    <button id="btn1" onclick="pageUpdater()">Proceed</button>
+    <button id="btn2" onclick="labTrue()">Laboratory</button>
+    <button id="btn3" onclick="kitchenTrue()">Kitchen</button>
+    <button id="btn4" onclick="infirmaryTrue()">Infirmary</button>
     <script src="js/script.js"></script>
     </body>
 </html>

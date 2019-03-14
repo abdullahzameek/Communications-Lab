@@ -8,6 +8,53 @@ body{
     height:100%;
 }
 
+#btn1{
+    background: whitesmoke;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 125%;
+    text-align: center;
+    width:10%;
+    height:5%;
+    transform: translate(445%,-50%);
+    display: block;
+}
+#btn2{
+    background: whitesmoke;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 125%;
+    text-align: center;
+    width:10%;
+    height:5%;
+    transform: translate(200%,-60%);
+    display: none;
+
+}
+#btn3{
+    background: whitesmoke;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 125%;
+    text-align: center;
+    width:10%;
+    height:5%;
+    transform: translate(700%,-170%);
+    display:none;
+}
+#btn4{
+    background: whitesmoke;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 125%;
+    text-align: center;
+    width:10%;
+    height:5%;
+    transform: translate(450%,-270%);
+    display: none;
+}
+
+
 #BGimageHolder{
     position: relative;
     width: 60%;
@@ -26,11 +73,12 @@ body{
 
 #textRegion{
     position: relative;
-    width: 90%;
-    height:15%;
-    transform: translate(5%, 17%);
-    font-size: 125%;
+    width: 60%;
+    height:25%;
+    transform: translate(33%, 17%);
+    font-size: 145%;
     font-family: 'Roboto Condensed', sans-serif;
     color:whitesmoke;
     text-align: center; 
 }
+
