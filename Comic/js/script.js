@@ -1,6 +1,7 @@
 let dialogue = [];
 let counter = 0;
 let chara = [];
+let bg = [];
 let track1 = document.getElementById('player');
 let track2 = document.getElementById('player2');
 let track3 = document.getElementById('player3');
@@ -36,14 +37,24 @@ text2 = fetch("https://imanas.shanghai.nyu.edu/~arz268/communications-lab/Comic/
 });
 
 
+text = fetch("https://imanas.shanghai.nyu.edu/~arz268/communications-lab/Comic/bg.txt")
+.then((response)=>{
+    return response.text()
+})
+.then((response)=>{
+    bg = response.split("\n");
+    return bg;
+});
+
+
 // These are the 4 routes, one good ending, three bad. The order are Lab-Good, Lab-Bad, Kitchen, Infirmary 
-routes = [false,false, true, true];
+routes = [false,false,false,false];
 p = document.getElementById('actualText');
 btn1 = document.getElementById('btn1');
 btn2 = document.getElementById('btn2');
 btn3 = document.getElementById('btn3');
 btn4 = document.getElementById('btn4');
-
+bgImg = document.getElementById('bgImg');
 
 
 //made this to display/hide the buttons. When Proceed is shown, the others have to be hidden and vice versa.
@@ -80,6 +91,46 @@ function allTracksPause(){
 
 function pageUpdater(){
     console.log(counter);
+
+
+if(counter===68||counter===87||counter===116){
+    counter = 46;
+    allTracksPause();
+    track9.currentTime = 0;
+    track8.currentTime = 0;
+    track6.play();       
+}
+
+p.innerHTML = dialogue[counter];
+if(counter===46)
+{
+    flipButtons('t');
+}
+
+if(bg[counter] == 1){
+    console.log("null");
+    bgImg.src = "assets/null.jpg"
+}
+if(bg[counter] == 2){
+    console.log("parkinglot");
+    bgImg.src = "assets/bgPark.jpg"
+}
+if(bg[counter] == 3){
+    console.log("dungeon");
+    bgImg.src = "assets/bgDungeon.jpg"
+}
+if(bg[counter] == 4){
+    console.log("hp");
+    bgImg.src = "assets/bgHP.jpg"
+}
+if(bg[counter] == 6){
+    console.log("kitchen");
+    bgImg.src = "assets/bgKit.jpg"
+}
+if(bg[counter] == 5){
+    console.log("lab");
+    bgImg.src = "assets/bgLab.jpg"
+}
 
 if(counter===0){
     track1.pause();
@@ -181,23 +232,8 @@ if(counter===163){
     track13.play();
 }
 
+counter++;
 
-    if(counter===68||counter===87||counter===116){
-        allTracksPause();
-        track9.currentTime = 0;
-        track8.currentTime = 0;
-        track6.play();
-        counter = 46;
-    }
-
-    // console.log(counter);
-    console.log(chara[counter]);
-    p.innerHTML = dialogue[counter];
-    if(counter===46)
-    {
-        flipButtons('t');
-    }
-    counter++;
 }
 
 function labTrue(){
