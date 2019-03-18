@@ -20,12 +20,14 @@ body{
     transform: translate(445%,-50%);
     display: block;
 }
+
+
 #btn2{
     position: relative;
     background: whitesmoke;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 125%;
+    font-size: 130%;
     text-align: center;
     width:10%;
     height:5%;
@@ -63,7 +65,7 @@ body{
     position: relative;
     width: 60%;
     height: 65%;
-    transform: translate(40%, 5%);
+    transform: translate(35%, 5%);
     object-fit: contain;
 }
 
@@ -82,7 +84,7 @@ body{
 
 #charaImg{
     position:absolute;
-    display: block;
+    display:none;
     max-width: 100%;
     max-height: 100%;
     z-index: 9999999;
@@ -93,7 +95,7 @@ body{
     width: 60%;
     height:25%;
     transform: translate(33%, 17%);
-    font-size: 145%;
+    font-size: 135%;
     font-family: 'Roboto Condensed', sans-serif;
     color:whitesmoke;
     text-align: center; 
