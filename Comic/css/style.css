@@ -9,6 +9,7 @@ body{
 }
 
 #btn1{
+    position: relative;
     background: whitesmoke;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
@@ -20,6 +21,7 @@ body{
     display: block;
 }
 #btn2{
+    position: relative;
     background: whitesmoke;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
@@ -32,6 +34,7 @@ body{
 
 }
 #btn3{
+    position: relative;
     background: whitesmoke;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
@@ -43,6 +46,7 @@ body{
     display:none;
 }
 #btn4{
+    position: relative;
     background: whitesmoke;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
@@ -59,21 +63,29 @@ body{
     position: relative;
     width: 60%;
     height: 65%;
-    transform: translate(35%, 5%);
+    transform: translate(40%, 5%);
     object-fit: contain;
 }
 
 #bgImg{
     max-width: 100%;
     max-height: 100%;
+}
+
+#charaImageHolder{
+    position: absolute;
+    width: 20%;
+    height: 80%;
+    transform: translate(200%, -110%);
     object-fit: contain;
 }
 
-#charaImage{
-    position: relative;
-    width: 20%;
-    height: 80%;
-    transform: translate(200%, 25%);
+#charaImg{
+    position:absolute;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 9999999;
 }
 
 #textRegion{

@@ -55,7 +55,7 @@ btn2 = document.getElementById('btn2');
 btn3 = document.getElementById('btn3');
 btn4 = document.getElementById('btn4');
 bgImg = document.getElementById('bgImg');
-
+charaImg = document.getElementById('charaImg');
 
 //made this to display/hide the buttons. When Proceed is shown, the others have to be hidden and vice versa.
 function flipButtons(state){
@@ -92,6 +92,9 @@ function allTracksPause(){
 function pageUpdater(){
     console.log(counter);
 
+if(counter===182){
+    btn1.style.display = "none";
+}
 
 if(counter===68||counter===87||counter===116){
     counter = 46;
@@ -107,6 +110,55 @@ if(counter===46)
     flipButtons('t');
 }
 
+if(chara[counter] == 0)
+{
+    charaImg.style.display = "none";
+}
+
+
+if(chara[counter] == 1)
+{
+    charaImg.style.display = "block";
+    charaImg.src = "assets/sigma.png";
+}
+
+
+if(chara[counter] == 2)
+{
+    charaImg.style.display = "block";
+    charaImg.src = "assets/clover.png";
+}
+
+
+if(chara[counter] == 3)
+{
+    charaImg.style.display = "block";
+    charaImg.src = "assets/dio.png";
+}
+
+
+if(chara[counter] == 4)
+{
+    charaImg.style.display = "block";
+    charaImg.src = "assets/phi.png";
+}
+
+
+if(chara[counter] == 5)
+{
+    charaImg.style.display = "block";
+    charaImg.src = "assets/tenmyouji.png";
+}
+
+
+if(chara[counter] == 6)
+{
+    charaImg.style.display = "block";
+    charaImg.src = "assets/delta.png";
+}
+
+
+
 if(bg[counter] == 1){
     console.log("null");
     bgImg.src = "assets/null.jpg"
@@ -114,6 +166,7 @@ if(bg[counter] == 1){
 if(bg[counter] == 2){
     console.log("parkinglot");
     bgImg.src = "assets/bgPark.jpg"
+    bgImg.style.width = "140%";
 }
 if(bg[counter] == 3){
     console.log("dungeon");
