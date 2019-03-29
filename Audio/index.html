@@ -1,13 +1,54 @@
 <!DOCTYPE html>
     <head>
         <link rel="stylesheet" href="css/style.css">
-        
     </head>
-    
     <body>
+    
+    <div id="imageHolder">
+    <img id="image1" src="AudioAssets/1.gif" width="1280px" height="720px">
+    </div>
 
-    <img id="image1" src="AudioAssets/last-forest.jpg" width="50%" height="50%" onclick="toggleZoomScreen()">
-        
+    <div id="buttons">   
+    <button id="btn1" onclick="zoomIn()">Zoom</button>
+    <button id="btn2" onclick="distort()">Distort</button>
+    </div>
+
+
+    <audio id="player" autoplay loop>
+        <source src="AudioAssets/1.wav" type="audio/mp3">
+    </audio>
+    
+     <audio id="player2">
+        <source src="AudioAssets/2.wav" type="audio/mp3">
+    </audio>
+    
+    <audio id="player3">
+        <source src="AudioAssets/3.wav" type="audio/mp3">
+    </audio>
+    
+    <audio id="player4">
+        <source src="AudioAssets/4.wav" type="audio/mp3">
+    </audio>
+    
+
+    <audio id="player1Prime">
+        <source src="AudioAssets/1'.wav" type="audio/mp3">
+    </audio>
+
+    <audio id="player2Prime">
+        <source src="AudioAssets/2'.wav" type="audio/mp3">
+    </audio>
+
+    <audio id="player3Prime">
+        <source src="AudioAssets/3'.wav" type="audio/mp3">
+    </audio>
+    
+    <audio id="player4Prime">
+        <source src="AudioAssets/4'.wav" type="audio/mp3">
+    </audio>
+
+
+
     <script src="js/script.js"></script>   
     </body>
 </html>
