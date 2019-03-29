@@ -48,24 +48,21 @@ function allTrackPause(){
     track4Prime.currentTime = 0;
 }
 
-function distort(){
-    if(distortion===false){
-        distortion = true;
-        allTrackPausse();
+function undistort(){
+        allTrackPause();
         tracks[curImage].volume = tracks[curImage].volume - 0.05;
         pic.src = images[curImage];
         tracks[curImage].volume = 1.0;
         tracks[curImage].play();
 
-    }
-    else{
-        distortion = false;
+}
+
+function distort(){
         allTrackPause();
         tracksPrime[curImage].volume = tracksPrime[curImage].volume - 0.05;
         pic.src = imagesPrime[curImage];
         tracksPrime[curImage].volume = 1.0;
         tracksPrime[curImage].play();
-    }
 }
 
 function zoomIn() {
