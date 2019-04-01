@@ -2,15 +2,22 @@
 let zoomLvl = 100;
 let pic = document.getElementById("image1");
 let images = ["AudioAssets/1.gif","AudioAssets/2.jpg","AudioAssets/3.jpg","AudioAssets/4.jpg"];
-let imagesPrime = ["AudioAssets/1'.gif","AudioAssets/2'.jpg","AudioAssets/3'.jpg","AudioAssets/4'.jpg"];
+let imagesPrime = ["AudioAssets/1_.gif","AudioAssets/2_.jpg","AudioAssets/3_.jpg","AudioAssets/4_.jpg"];
+let messages = ["Maybe, it's time to leave...",
+                "Do you hear it?",
+                "How about now?",
+                "What was that?"
+                ];
 
 //let audio = ["AudioAssets/1.wav","AudioAssets/2.wav","AudioAssets/3.wav","AudioAssets/4.wav"];
 let curImage = 0
-
+let curMessage = 0;
+curMessage = curMessage%messages.length; 
 let track1 = document.getElementById('player');
 let track2 = document.getElementById('player2');
 let track3 = document.getElementById('player3');
 let track4 = document.getElementById('player4');
+let btn = document.getElementById('btn1');
 
 
 let track1Prime = document.getElementById('player1Prime');
@@ -23,10 +30,10 @@ let tracks = [track1, track2,track3,track4];
 let tracksPrime = [track1Prime, track2Prime,track3Prime,track4Prime];
 
 //function that actually does the zoom thing\
-let curWidth = 1280;
-let curHeight = 720;
-let originalHeight = 1280;
-let originalWidth = 720;
+let curWidth = 1024;
+let curHeight = 576;
+let originalHeight = 576;
+let originalWidth = 1024;
 let distortion = false;
 
 function allTrackPause(){
@@ -54,6 +61,8 @@ function undistort(){
         pic.src = images[curImage];
         tracks[curImage].volume = 1.0;
         tracks[curImage].play();
+        btn.innerHTML = messages[curMessage];
+
 
 }
 
@@ -63,6 +72,7 @@ function distort(){
         pic.src = imagesPrime[curImage];
         tracksPrime[curImage].volume = 1.0;
         tracksPrime[curImage].play();
+        btn.innerHTML = "<i> ? ? ? ? ? ? ? ? ? ? ? ? </i> ";
 }
 
 function zoomIn() {
@@ -70,18 +80,22 @@ function zoomIn() {
     console.log(curWidth);
     console.log(curHeight);
 
-    curWidth = curWidth-0.1*originalWidth;
-    curHeight = curHeight- 0.1*originalHeight;
+    curWidth = curWidth-0.20*originalWidth;
+    curHeight = curHeight- 0.20*originalHeight;
     
     if(distortion === false){
-        tracks[curImage].volume = tracks[curImage].volume - 0.05;
+        tracks[curImage].volume = tracks[curImage].volume - 0.15;
     }
     else{
-        tracksPrime[curImage].volume = tracksPrime[curImage].volume - 0.05;
+        tracksPrime[curImage].volume = tracksPrime[curImage].volume - 0.15;
     }
 
     pic.style.width = (curWidth)+"px";
     pic.style.height = (curHeight)+"px";
+    curMessage = curMessage%messages.length; 
+    console.log(messages[curMessage]);
+    btn.innerHTML = messages[curMessage];
+    curMessage++;
 
     if(curHeight < 0.2*originalHeight && curWidth<0.2*originalWidth) {
         console.log("change now!, current image is" + curImage);

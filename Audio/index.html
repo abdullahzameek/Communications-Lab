@@ -1,54 +1,37 @@
 <!DOCTYPE html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-    
-    <div id="imageHolder">
-    <img id="image1" src="AudioAssets/1.gif" width="1280px" height="720px" onmouseover="distort()" onmouseout="undistort()">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Treefalls </title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script2.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="leaves">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+    <div class="prompt">
+      <p>If a tree falls in the middle of a forest with nobody there to hear it, does it make a sound?</p>
     </div>
 
-    <div id="buttons">   
-    <button id="btn1" onclick="zoomIn()">Zoom</button>
-   
+    <div class="button">
+        <button type="button" id="proceed" onclick="proceed()">Click here to explore this question.
+          <audio id="audio" src="AudioAssets/treefall2.mp3" ></audio>
+        </button>
     </div>
-
-
-    <audio id="player" autoplay loop>
-        <source src="AudioAssets/1.wav" type="audio/mp3">
-    </audio>
-    
-     <audio id="player2">
-        <source src="AudioAssets/2.wav" type="audio/mp3">
-    </audio>
-    
-    <audio id="player3">
-        <source src="AudioAssets/3.wav" type="audio/mp3">
-    </audio>
-    
-    <audio id="player4">
-        <source src="AudioAssets/4.wav" type="audio/mp3">
-    </audio>
-    
-
-    <audio id="player1Prime">
-        <source src="AudioAssets/1'.wav" type="audio/mp3">
-    </audio>
-
-    <audio id="player2Prime">
-        <source src="AudioAssets/2'.wav" type="audio/mp3">
-    </audio>
-
-    <audio id="player3Prime">
-        <source src="AudioAssets/3'.wav" type="audio/mp3">
-    </audio>
-    
-    <audio id="player4Prime">
-        <source src="AudioAssets/4'.wav" type="audio/mp3">
-    </audio>
-
-
-
-    <script src="js/script.js"></script>   
-    </body>
+  </body>
 </html>
