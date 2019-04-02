@@ -108,14 +108,14 @@ function zoomIn() {
             pic.src = imagesPrime[curImage];
         }
 
-        pic.style.width = 1280;
-        pic.style.height = 720;
+        pic.style.width = 1024;
+        pic.style.height = 576;
         
-        curWidth = 1280;
-        curHeight = 720;
+        curWidth = 1024;
+        curHeight = 576;
         
-        originalWidth = 1280;
-        originalHeight = 720;
+        originalWidth = 1024;
+        originalHeight = 576;
         
         allTrackPause();
         
